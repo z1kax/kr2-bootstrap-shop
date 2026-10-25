@@ -1,16 +1,69 @@
+/* 1. Переменные и цвета */
+:root {
+  --bs-primary: #7D29F2;
+  --bs-primary-rgb: 125, 41, 242;
+}
+
+/* Перекрашиваем кнопки Bootstrap */
+.btn-primary {
+  --bs-btn-bg: #7D29F2;
+  --bs-btn-border-color: #7D29F2;
+  --bs-btn-hover-bg: #5a14a8;
+  --bs-btn-hover-border-color: #5a14a8;
+}
+.btn-outline-primary {
+  --bs-btn-color: #7D29F2;
+  --bs-btn-border-color: #7D29F2;
+  --bs-btn-hover-bg: #7D29F2;
+}
+
+/* 2. Глобальные стили (футер всегда внизу) */
 body {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f4f6f9;
+}
+main {
+  flex: 1 0 auto;
+}
+footer {
+  flex-shrink: 0;
 }
 
-.placeholder-box {
-  min-height: 240px;
+/* 3. Карточки (ховер-эффект) */
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
 
-.placeholder-image {
-  min-height: 320px;
+/* 4. Горизонтальный свайп */
+.swipe-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 1.5rem;
+  padding-bottom: 1.5rem;
+  scroll-behavior: smooth;
 }
-
-.card-img-top {
-  height: 180px;
-  object-fit: cover;
+.swipe-wrapper::-webkit-scrollbar {
+  height: 8px;
+}
+.swipe-wrapper::-webkit-scrollbar-track {
+  background: #e9ecef;
+  border-radius: 10px;
+}
+.swipe-wrapper::-webkit-scrollbar-thumb {
+  background: #7D29F2;
+  border-radius: 10px;
+}
+.swipe-card {
+  flex: 0 0 auto;
+  width: 300px;
+  border-radius: 12px;
 }
