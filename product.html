@@ -11,6 +11,7 @@
 
   <title>Товар - KeyStore</title>
   
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/custom.css">
   <script src="js/main.js" defer></script>
@@ -98,6 +99,60 @@
         </div>
       </div>
     </div>
+
+    <section class="container my-5">
+      <h2 class="h4 mb-3">Частые вопросы</h2>
+
+      <div class="accordion" id="faqAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faqOne"
+              aria-expanded="true"
+              aria-controls="faqOne"
+            >
+              Есть ли гарантия на клавиатуры?
+            </button>
+          </h3>
+          <div
+            id="faqOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Да, на все товары предоставляется официальная гарантия от производителя сроком на 12 месяцев.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#faqTwo"
+              aria-expanded="false"
+              aria-controls="faqTwo"
+            >
+              Можно ли вернуть товар, если он не подошел?
+            </button>
+          </h3>
+          <div
+            id="faqTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#faqAccordion"
+          >
+            <div class="accordion-body">
+              Да, вы можете вернуть клавиатуру в течение 14 дней с момента получения, если сохранена оригинальная упаковка и товарный вид.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
   
   <footer class="bg-dark text-white py-4 mt-5">
